@@ -8,7 +8,7 @@
 #### What is inside this project ?
 > TL;DR non-linear analyses of a dynamical system
 
-<img href=".assets/numerical_showcase.gif" src="https://github.com/Jac-Zac/Dynamic_System_Project/blob/master/.assets/numerical_showcase.gif?raw=true" alt="minimal" align="right" width="400px"/>
+<img href=".assets/image.jpeg" src="https://github.com/Jac-Zac/Dynamic_System_Project/blob/master/.assets/numerical_showcase.gif?raw=true" alt="minimal" align="right" width="400px"/>
 
 <br>
 <p style="text-align:justify; line-height: 1.5;padding: 10px;">
@@ -29,6 +29,4 @@
 
 ### Resources
 
-- https://docs.manim.community/en/stable/reference/manim.mobject.vector_field.StreamLines.html
-
-- https://docs.manim.community/en/stable/reference/manim.mobject.vector_field.VectorField.html
+- https://www.overleaf.com/project/645a709f803a8c1070baab3d
