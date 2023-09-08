@@ -18,11 +18,11 @@ docker login
 - ##### Start a MySQL server instance and pull it if needed:
 
 ```
-docker run -p 13306:3306 --name mysql_uni -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+docker run -p 13306:3306 --name mysql_uni_project -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
 ```
 
 > Access a terminal to the docker container
-> docker exec -it mysql_uni /bin/sh
+> docker exec -it mysql_uni_project /bin/sh
 
 - ##### Connect to mysql from the terminal
 
