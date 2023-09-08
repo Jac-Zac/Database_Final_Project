@@ -2,31 +2,40 @@
     Database Final Project 🤖
 </h1>
 
+# Project requirements
 
-# Project description
+Install [Beekeeper Studio (Community Edition)](https://github.com/beekeeper-studio/beekeeper-studio)
 
-#### What is inside this project ?
-> TL;DR non-linear analyses of a dynamical system
+#### To get started:
+> Documentation can be found [hear](https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/docker-mysql-getting-started.html)
 
-<img href=".assets/image.jpeg" src="https://github.com/Jac-Zac/Database_Final_Project/blob/master/.assets/image.jpeg?raw=true" alt="minimal" align="right" width="400px"/>
+- ##### Login into docker hub:
 
-<br>
-<p style="text-align:justify; line-height: 1.5;padding: 10px;">
-**In this repository you can find:**
+```
+docker login
+```
 
-- The [`jupyter notebook`](https://github.com/Jac-Zac/Dynamic_Systems_Project/blob/master/phase_diagram.ipynb)
+- ##### Start a MySQL server instance and pull it if needed:
 
-- The code to create the [`gif`](https://github.com/Jac-Zac/Dynamic_Systems_Project/tree/master/python_animations)
+```
+docker run -p 13306:3306 --name mysql_uni -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+```
 
-- The code for the [`manim animation`](https://github.com/Jac-Zac/Dynamic_Systems_Project/tree/master/manim_animation)
+> Access a terminal to the docker container
+> docker exec -it mysql_uni /bin/sh
 
-- The main [`library with the solvers`](https://github.com/Jac-Zac/Dynamic_Systems_Project/tree/master/library)
+- ##### Connect to mysql from the terminal
 
-###### To convert the notebook to latex we used:
-> `jupyter nbconvert --to latex --template article phase_diagram.ipynb`
+```
+mysql --host=127.0.0.1 --port=13306 -u root -p
+```
+> if you need to install the database after you have the connection you can just write
+```
+source mysqlsampledatabase.sql
+```
+> if this database is in your directory
 
-</p>
+# TODO
 
-### Resources
-
-- https://www.overleaf.com/project/645a709f803a8c1070baab3d
+- [ ] Complete the project
+- [ ] Restructure the README.md following previous repo you created
