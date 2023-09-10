@@ -35,6 +35,10 @@ source mysqlsampledatabase.sql
 ```
 > if this database is in your directory
 
+### Logic Schema
+
+The logic schema can be found in [this link](https://dbdiagram.io/d/64fd90bf02bd1c4a5e4826a8)
+
 # TODO
 
 - [ ] Complete the project
