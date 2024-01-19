@@ -7,6 +7,7 @@
 Install [Beekeeper Studio (Community Edition)](https://github.com/beekeeper-studio/beekeeper-studio)
 
 #### To get started:
+
 > Documentation can be found [hear](https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/docker-mysql-getting-started.html)
 
 - ##### Login into docker hub:
@@ -29,10 +30,13 @@ docker run -p 13306:3306 --name mysql_uni_project -e MYSQL_ROOT_HOST=% -e MYSQL_
 ```
 mysql --host=127.0.0.1 --port=13306 -u root -p
 ```
+
 > if you need to install the database after you have the connection you can just write
+
 ```
 source mysqlsampledatabase.sql
 ```
+
 > if this database is in your directory
 
 ### Logic Schema
@@ -43,3 +47,6 @@ The logic schema can be found in [this link](https://dbdiagram.io/d/64fd90bf02bd
 
 - [ ] Complete the project
 - [ ] Restructure the README.md following previous repo you created
+
+Difference between where and grup by (having va doop grup by)
+Be carefull on the constraints
